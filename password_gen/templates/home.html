@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <style>
+        body {
+            background-color: #000000;
+        }
+        p {
+            color: #28ed74;
+        }
+    </style>
+</head>
+<body>
+<form action="#" method="post">{% csrf_token %}
+    <p>lowercase letters:
+    <input type="checkbox" name="lowercase letters" size="7"/>
+    <p>uppercase letters:
+    <input type="checkbox" name="uppercase letters" size="7"/>
+    <p>numbers:
+    <input type="checkbox" name="numbers" size="7"/>
+    <p>special chars(etc. $):
+    <input type="checkbox" name="special chars" size="7"/>
+    <p>length of password (should be smaller than 17):
+    <input type="text" name="length of password" size="2" maxlength="2"/>
+    <br>
+    <input type="submit" class="btn" value="Generate Password" name="mybtn">
+</form>
+</body>
+</html>

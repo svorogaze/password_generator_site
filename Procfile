@@ -1,0 +1,1 @@
+web: gunicorn pass_gen_site.wsgi --log-file -
